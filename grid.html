@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    .main {
+      height: 400px;
+      width: 500px;        
+      border: 2px solid black;
+      background-color: white;
+      padding: 10px;
+      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas: 
+        "navbar  navbar navbar navbar navbar navbar navbar navbar"
+        "some1 some2 some3 header header header some4 some4"
+        "some1 some2 some3 header header header some5 some6"
+        "some1 some7 some7 header header header some5 some6"
+        "footer footer footer footer footer footer footer footer";
+    }
+
+    .child {
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .child1 { grid-area: navbar; background-color: rgb(80, 146, 146);}
+    .child2 { grid-area: some1; background-color: orange; }
+    .child3 { grid-area: some2; background-color: rgb(187, 187, 119); }
+    .child4 { grid-area: some3; background-color: green;}
+    .child5 { grid-area: some4;background-color: blueviolet; }
+    .child6 { grid-area: header;background-color: coral;}
+    .child7 { grid-area: some5;background-color: darkgrey; }
+    .child8 { grid-area: some6;background-color: black; } 
+    .child9{grid-area: some7; background-color:blue;}
+    .child10 { grid-area: footer; background-color:darksalmon;}
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="child child1">Navbar</div>
+    <div class="child child2">Sidebar</div>
+    <div class="child child3">Content1</div>
+    <div class="child child4">Content2</div>
+    <div class="child child5">Content3</div>
+    <div class="child child6">Header</div>
+    <div class="child child7">Content4</div>
+    <div class="child child8">Content5</div>
+    <div class="child child9">Content6</div>
+    <div class="child child10">Footer</div>
+  </div>
+</body>
+</html>
