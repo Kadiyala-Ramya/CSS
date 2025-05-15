@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .tags{
+            background-color: black;
+            height:200px;
+            width:300px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            gap:10px;
+            margin-top:200px;
+            margin-left: 200px;
+        }
+        .tag{
+            background-color:white;
+            height:80px;
+            width:5px;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count:infinite;
+        }
+        .tag1{
+            animation-name: music1;
+        }
+        .tag2{
+            animation-name: music2;
+        }
+        .tag3{
+            animation-name: music3;
+        }
+        .tag4{
+            animation-name: music4;
+        }
+        .tag5{
+            animation-name: music5;
+        }
+
+        @keyframes music1{
+            100%{
+                transform:scaleY(0.8);
+                background-color: azure;
+            }
+             25%{
+                transform:scaleY(0.2);
+                background-color: antiquewhite;
+             }
+             50%{
+                transform: scaleY(1.4);
+                background-color: aquamarine;
+             }
+             75%{
+                transform:scaleY(0.1);
+                background-color: blue;
+             }
+        }
+        @keyframes music2{
+            100%{
+                transform:scaleY(0.5);
+                background-color:brown;
+            }
+             25%{
+                transform:scaleY(1.0);
+                background-color:blueviolet;
+             }
+             50%{
+                transform: scaleY(0.2);
+                background-color: cadetblue;
+             }
+             75%{
+                transform:scaleY(0.7);
+                background-color: chartreuse;
+             }
+        }
+        @keyframes music3{
+            100%{
+                transform:scaleY(0.5);
+                background-color:dimgrey;
+             }
+
+             25%{
+                transform:scaleY(0.5);
+                background-color: coral;
+             }
+             50%{
+                transform: scaleY(0.8);
+                background-color: cornflowerblue;
+             }
+             75%{
+                transform:scaleY(0.2);
+                background-color: cornsilk;
+             }
+        }
+        @keyframes music4{
+            100%{
+                transform:scaleY(0.2);
+                background-color:darkred;
+            }
+             25%{
+                transform:scaleY(0.5);
+                background-color: darkkhaki;
+             }
+             50%{
+                transform: scaleY(0.8);
+                background-color: darkturquoise;
+             }
+             75%{
+                transform:scaleY(0.6);
+                background-color: darkslategrey;
+             }
+        }
+        @keyframes music5{
+            100%{
+                transform:scaleY(0.2);
+                background-color: forestgreen;
+            }
+             25%{
+                transform:scaleY(0.3);
+                background-color: dodgerblue;
+             }
+             50%{
+                transform: scaleY(0.4);
+                background-color: hotpink;
+             }
+             75%{
+                transform:scaleY(0.2);
+                background-color: firebrick;
+             }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="tags">
+        <div class="tag tag1"></div>
+        <div class="tag tag2"></div>
+        <div class="tag tag3"></div>
+        <div class="tag tag4"></div>
+        <div class="tag tag5"></div>
+    </div>
+</body>
+</html>
